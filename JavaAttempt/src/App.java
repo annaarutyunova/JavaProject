@@ -63,21 +63,28 @@ public class App
         String row = "";
         String splitBy = ",";
         String[] transactions;
-        ArrayList<String> numbers = new ArrayList<>();
+        ArrayList<Float> numbers = new ArrayList<>();
         ArrayList<ArrayList<String>> records = new ArrayList<>();
 
         try{
 
 
             BufferedReader reader = new BufferedReader(new FileReader("octoberTransactions.csv"));
+            reader.readLine();
+            reader.readLine();
+            reader.readLine();
+            reader.readLine();
             while((row = reader.readLine())!=null){
-                transactions = row.split(splitBy);
+                transactions = row.split(splitBy, -1);
                 if(transactions.length == 8){
-                    if(transactions[6].replace("\"","") != ""){
-                        String item = transactions[6];
+                    String reduced = transactions[6].replace("\"","");
+                    if(reduced != ""){
+                        String item = reduced;
                         System.out.println(item);
-                        numbers.add(item);
-                        System.out.println(numbers.get(0));
+                        numbers.add(Float.parseFloat(item));
+
+                        // System.out.println(numbers.get(0));
+                        
                     }
                 }
               else{
@@ -92,6 +99,11 @@ public class App
             
            
             }
+            double sum = numbers.stream().mapToDouble(n->n).sum();
+            // for(Float number:numbers){
+            //     math.Sum(number);
+            // }
+            System.out.println(sum);
         }
         catch(IOException e)
         {
