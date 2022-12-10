@@ -3,9 +3,9 @@
 {Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
 
 {Provide a description the software that you wrote to demonstrate the Java language.}
-
+This is a piece of software that reads through a csv bank statement and adds up all credit and debit amounts. 
 {Describe your purpose for writing this software.}
-
+The purpose of the program is to provide an efficient way to process data from a csv file, as well as to learn how to program in Java using classes, functions, loops, arrays, bufferreader and other things.
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
 
 [Software Demo Video](http://youtube.link.goes.here)

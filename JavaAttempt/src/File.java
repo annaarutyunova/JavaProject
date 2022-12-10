@@ -1,6 +1,4 @@
-import java.io.*;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -8,7 +6,7 @@ import java.text.DecimalFormat;
 
 
 public class File {
-    private String filename = "novemberTransactions.csv";
+    private String filename = "octoberTransactions.csv";
     String row = "";
     String splitBy = ",";
     String[] transactions;
@@ -50,18 +48,8 @@ public class File {
                         // System.out.println(d);
                         debit.add(Float.parseFloat(d));
                     }
-                   
                 }
-                // else
-                // {
-                //     System.out.println("The row is empty");
-                // }
             }
-
-            // double sumCredit = credit.stream().mapToDouble(n->n).sum();
-            // double sumDebit = debit.stream().mapToDouble(n->n).sum();
-            // System.out.println("Total amount earned: $" + df.format(sumCredit));
-            // System.out.println("Total amount spent: $" + df.format(sumDebit));
         }
         catch(IOException e)
         {
