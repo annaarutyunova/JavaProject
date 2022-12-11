@@ -4,7 +4,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.text.DecimalFormat;
 
-
 public class File {
     private String filename = "octoberTransactions.csv";
     String row = "";
