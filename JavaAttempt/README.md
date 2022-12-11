@@ -1,30 +1,29 @@
 # Overview
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
-
-{Provide a description the software that you wrote to demonstrate the Java language.}
 This is a piece of software that reads through a csv bank statement and adds up all credit and debit amounts. 
-{Describe your purpose for writing this software.}
+
 The purpose of the program is to provide an efficient way to process data from a csv file, as well as to learn how to program in Java using classes, functions, loops, arrays, bufferreader and other things.
 {Provide a link to your YouTube demonstration.  It should be a 4-5 minute demo of the software running and a walkthrough of the code.  Focus should be on sharing what you learned about the language syntax.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/7TeDiSCQRqc)
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+java extention pack for VS code
+Vs code
+csv files
 
-{Describe the programming language that you used and any libraries.}
+java
+java.io library 
+java.text library
+java.util library
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+* [Visual Studio Code. Managing Java Projects in VS Code](https://code.visualstudio.com/docs/java/java-project)
+* [Javatpoint](https://www.javatpoint.com/how-to-read-csv-file-in-java)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-* Item 1
-* Item 2
-* Item 3
+* It would be good to be able to display in the console the name of the month of the transactionsm depending on the date in the CSV file
+* It would be great to somehow add categories of my spendings
